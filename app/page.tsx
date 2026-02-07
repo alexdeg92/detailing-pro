@@ -62,41 +62,41 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/80 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-gray-950/50" />
       </div>
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-amber-400/10 border border-amber-400/20 text-amber-400 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
             <span className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" />
             #1 en esthétique automobile dans les Laurentides
           </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-6">
+          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black text-white leading-[1.05] mb-6">
             Votre auto mérite le{" "}
             <span className="bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">traitement VIP</span>
           </h1>
-          <p className="text-xl text-gray-400 mb-8 max-w-xl leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-400 mb-8 max-w-xl leading-relaxed break-words">
             Détailing intérieur, extérieur et revêtement céramique professionnel. Des résultats qui parlent d&apos;eux-mêmes depuis 2015.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#contact" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-400 to-orange-500 text-gray-900 px-8 py-4 rounded-full text-lg font-bold shadow-xl shadow-amber-500/25 hover:shadow-amber-500/40 transition-all hover:-translate-y-0.5">
+            <a href="#contact" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-400 to-orange-500 text-gray-900 px-8 py-4 rounded-full text-lg font-bold shadow-xl shadow-amber-500/25 hover:shadow-amber-500/40 transition-all hover:-translate-y-0.5">
               Soumission gratuite
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </a>
-            <a href="tel:5147089087" className="inline-flex items-center justify-center gap-2 border-2 border-gray-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:border-amber-400 hover:text-amber-400 transition-all">
+            <a href="tel:5147089087" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-gray-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:border-amber-400 hover:text-amber-400 transition-all">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
               (514) 708-9087
             </a>
           </div>
-          <div className="mt-16 grid grid-cols-3 gap-8 max-w-lg">
+          <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-lg">
             <div>
-              <div className="text-3xl font-black text-white">2500+</div>
-              <div className="text-sm text-gray-500">Véhicules traités</div>
+              <div className="text-2xl sm:text-3xl font-black text-white">2500+</div>
+              <div className="text-xs sm:text-sm text-gray-500">Véhicules traités</div>
             </div>
             <div>
-              <div className="text-3xl font-black text-white">9 ans</div>
-              <div className="text-sm text-gray-500">D&apos;expérience</div>
+              <div className="text-2xl sm:text-3xl font-black text-white">9 ans</div>
+              <div className="text-xs sm:text-sm text-gray-500">D&apos;expérience</div>
             </div>
             <div>
-              <div className="text-3xl font-black text-white">4.9★</div>
-              <div className="text-sm text-gray-500">Google Reviews</div>
+              <div className="text-2xl sm:text-3xl font-black text-white">4.9★</div>
+              <div className="text-xs sm:text-sm text-gray-500">Google Reviews</div>
             </div>
           </div>
         </div>
@@ -186,7 +186,7 @@ function Gallery() {
           <h2 className="mt-3 text-4xl sm:text-5xl font-black text-white">Nos <span className="text-amber-400">réalisations</span></h2>
           <p className="mt-4 text-lg text-gray-400">Les résultats parlent d&apos;eux-mêmes.</p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {images.map((img) => (
             <div key={img.label} className="group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer">
               <Image src={img.src} alt={img.label} width={600} height={400} className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" unoptimized />
@@ -235,7 +235,7 @@ function Pricing() {
           <h2 className="mt-3 text-4xl sm:text-5xl font-black text-white">Nos <span className="text-amber-400">forfaits</span></h2>
           <p className="mt-4 text-lg text-gray-400">Prix pour véhicule de taille standard. Supplément pour VUS et camions.</p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {plans.map((p) => (
             <div key={p.name} className={`relative rounded-3xl p-8 ${p.popular ? "bg-gradient-to-b from-amber-400/10 to-orange-500/5 border-2 border-amber-400/30 shadow-2xl shadow-amber-500/10" : "bg-gray-900 border border-gray-800"}`}>
               {p.popular && (
@@ -283,7 +283,7 @@ function Reviews() {
           <span className="text-amber-400 font-semibold text-sm tracking-widest uppercase">Avis clients</span>
           <h2 className="mt-3 text-4xl sm:text-5xl font-black text-white">Ils nous font <span className="text-amber-400">confiance</span></h2>
         </div>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {reviews.map((r) => (
             <div key={r.name} className="bg-gray-950 border border-gray-800 rounded-2xl p-8 hover:border-amber-400/30 transition-colors">
               <div className="flex gap-1 mb-4">
@@ -350,16 +350,16 @@ function CTA() {
         <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-yellow-300 rounded-full blur-3xl" />
       </div>
-      <div className="relative max-w-4xl mx-auto px-4 text-center">
-        <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6">Prêt à redonner vie à votre véhicule?</h2>
+      <div className="relative max-w-4xl mx-auto px-6 text-center">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-6">Prêt à redonner vie à votre véhicule?</h2>
         <p className="text-xl text-gray-800 mb-8 max-w-2xl mx-auto">
           Obtenez une soumission gratuite en moins de 24 heures. Service mobile disponible — on se déplace chez vous!
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#contact" className="inline-flex items-center justify-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-gray-800 transition-all hover:-translate-y-0.5">
+          <a href="#contact" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-gray-800 transition-all hover:-translate-y-0.5">
             Demander une soumission
           </a>
-          <a href="tel:5147089087" className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur text-gray-900 px-8 py-4 rounded-full text-lg font-bold border-2 border-gray-900/20 hover:bg-white/30 transition-all">
+          <a href="tel:5147089087" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur text-gray-900 px-8 py-4 rounded-full text-lg font-bold border-2 border-gray-900/20 hover:bg-white/30 transition-all">
             (514) 708-9087
           </a>
         </div>
@@ -464,8 +464,8 @@ function Footer() {
   return (
     <footer className="bg-gray-950 border-t border-gray-800 text-gray-400 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-12">
-          <div className="md:col-span-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+          <div className="sm:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center">
                 <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 3l14 9-14 9V3z" /></svg>
